@@ -5,8 +5,11 @@ services:
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
-    ports:
-      - 8080:8080
+    # ports:
+    #   - 8080:8080
+    # para poder scale
+    expose:
+      - "8080"
     depends_on:
       - lb
       - dbmongo

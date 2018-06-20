@@ -30,7 +30,7 @@ const HOST = '192.168.99.100';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello world - John Serrano :D\n');
+  res.send('Hello world - John Serrano\n');
 });
 
 app.get('/hola-mundo', (req, res) => {
